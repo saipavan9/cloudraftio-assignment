@@ -13,8 +13,7 @@ serviceAccount:
 
 service:
   type: ClusterIP
-  port: 80
-  targetPort: 8080
+  port: 8080
 
 secret:
   name: metrics-app-secret
