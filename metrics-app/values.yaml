@@ -18,7 +18,6 @@ service:
 
 secret:
   name: metrics-app-secret
-  key: PASSWORD
   value: MYPASSWORD
 
 ingress:

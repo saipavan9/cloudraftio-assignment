@@ -35,4 +35,4 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: {{ .Values.secret.name }}
-                  key: {{ .Values.secret.key }}
+                  key: PASSWORD
