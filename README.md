@@ -101,7 +101,7 @@ Results are stored in `response.txt`.
 * * * * *
 Observations & Debugging
 ---------------------------
-See [`docs/observations.md`](docs/observations.md) for:
+See [`docs/README.md`](docs/README.md) for:
 
 -   `/counter` behavior
 -   Response latency
