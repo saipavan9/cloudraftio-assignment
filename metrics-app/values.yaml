@@ -18,7 +18,7 @@ service:
 
 secret:
   name: metrics-app-secret
-  value: MYPASSWORD
+  value: TVlQQVNTV09SRA==
 
 ingress:
   annotations:
