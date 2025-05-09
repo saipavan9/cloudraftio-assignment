@@ -5,16 +5,9 @@ Metrics App Deployment with Helm, ArgoCD, and KIND
 
 Objective
 ------------
+Please refer to the assignment details in the following repository:
 
-Deploy a containerized application (`ghcr.io/cloudraftio/metrics-app:1.1`) to a local Kubernetes cluster using:
-
--   **Helm** (for packaging)
-
--   **ArgoCD** (for GitOps-based deployment)
-
--   **KIND** (for local Kubernetes environment)
-
-The app exposes a `/counter` endpoint that increments a counter on each call.
+<https://github.com/cloudraftio/sre-assignment>
 
 * * * * *
 
@@ -53,7 +46,6 @@ Deployment Steps
 ```
 git clone https://github.com/saipavan9/cloudraftio-assignment.git
 cd cloudraftio-assignment
-
 ```
 
 ### 2\. Set Up KIND and ArgoCD
@@ -61,7 +53,6 @@ cd cloudraftio-assignment
 ```
 chmod +x bootstrap.sh
 ./bootstrap.sh
-
 ```
 
 This:
@@ -80,14 +71,12 @@ Make sure the following is added to your `/etc/hosts` file:
 
 ```
 sudo -- sh -c "echo '127.0.0.1 local.metrics-app.io' >> /etc/hosts"
-
 ```
 
 Then access the app via:
 
 ```
 curl http://local.metrics-app.io/counter
-
 ```
 
 * * * * *
@@ -99,15 +88,12 @@ Run the provided test script:
 
 ```
 ./scripts/test.sh
-
 ```
 
 This performs multiple `curl` requests to `/counter`, logging:
 
 -   HTTP status
-
 -   Response time
-
 -   Output content
 
 Results are stored in `response.txt`.
@@ -118,11 +104,8 @@ Observations & Debugging
 See [`docs/observations.md`](docs/observations.md) for:
 
 -   `/counter` behavior
-
 -   Response latency
-
 -   Resource usage spikes
-
 -   Root cause analysis
 
 * * * * *
