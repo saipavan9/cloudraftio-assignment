@@ -1,0 +1,30 @@
+Request #1
+Counter value: 1 Status: 200 | Time: 0.021798s
+--------
+Request #2
+Counter value: 2 Status: 200 | Time: 31.022791s
+--------
+Request #3
+Counter value: 3 Status: 200 | Time: 0.004977s
+--------
+Request #4
+Counter value: 4 Status: 200 | Time: 22.010781s
+--------
+Request #5
+Counter value: 5 Status: 200 | Time: 0.004645s
+--------
+Request #6
+Counter value: 6 Status: 200 | Time: 28.018667s
+--------
+Request #7
+Counter value: 7 Status: 200 | Time: 0.012440s
+--------
+Request #8
+Counter value: 8 Status: 200 | Time: 35.009772s
+--------
+Request #9
+Counter value: 9 Status: 200 | Time: 0.005643s
+--------
+Request #10
+Counter value: 10 Status: 200 | Time: 41.012835s
+--------
