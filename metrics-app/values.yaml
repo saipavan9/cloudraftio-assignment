@@ -22,18 +22,13 @@ secret:
 ingress:
   annotations:
     kubernetes.io/ingress.class: nginx
-    kubernetes.io/tls-acme: "true"
-    cert-manager.io/issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
   hosts:
     - host: local.metrics-app.io
       paths:
         - path: /counter
           pathType: Prefix
-
-  tls:
-   - secretName: metrics-app-tls
-     hosts:
-       - local.metrics-app.io
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
