@@ -36,9 +36,3 @@ spec:
                 secretKeyRef:
                   name: {{ .Values.secret.name }}
                   key: PASSWORD
-          readinessProbe:
-            httpGet:
-              path: {{ .Values.readiness.path}}
-              port: {{ .Values.service.port }}
-            initialDelaySeconds: 5
-            periodSeconds: 10
